@@ -1,7 +1,10 @@
 num=int(input("Enter a number: "))
-for x in range(4):
+while True:
   numstr=str(num)
   reversed_num = "".join(reversed(numstr))
+  if reversed_num==numstr:
+    break
   rev_str=int(reversed_num)
   num+=rev_str
   print(num)
+  
